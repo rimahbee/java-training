@@ -642,7 +642,7 @@ content.classList.add('error');
 content.classList.remove('error');
 content.classList.add('success'); */
 
-const paras = document.querySelectorAll('p');
+/* const paras = document.querySelectorAll('p');
 
 paras.forEach(p => {
   if(p.textContent.includes('error')){
@@ -657,3 +657,84 @@ const title = document.querySelector('.title');
 
 title.classList.toggle('test');
 title.classList.toggle('test');
+ */
+
+//const article = document.querySelector('article');
+
+///console.log(article.children);
+
+///console.log(Array.from(article.children));
+
+/* Array.from(article.children).forEach(child => {
+  child.classList.add('article-element');
+}); */
+
+//const title = document.querySelector('h2');
+
+//console.log(title.parentElement);
+//console.log(title.parentElement.parentElement);
+//console.log(title.nextElementSibling);
+//console.log(title.previousElementSibling);
+
+// chaining
+//console.log(title.nextElementSibling.parentElement.children);
+
+/* const button = document.querySelector('button');
+
+button.addEventListener('click', () => {
+  console.log('you clicked me');
+}); */
+
+/* const ul = document.querySelector('ul');
+//ul.remove();
+const button = document.querySelector('button');
+
+button.addEventListener('click', () => {
+  //ul.innerHTML += '<li>something new</li>';
+  const li = document.createElement('li');
+  li.textContent = 'something new to do';
+  //ul.append(li);
+  ul.prepend(li);
+}); */
+
+/* const items = document.querySelectorAll('li');
+
+items.forEach(item => {
+  item.addEventListener('click', e => {
+    //console.log('item clicked');
+    //console.log(e);
+    //console.log(e.target);
+    //console.log(item);
+    //e.target.style.textDecoration = 'line-through';
+    console.log('event in LI');
+    e.stopPropagation();
+    e.target.remove();
+  });
+}); */
+
+/* ul.addEventListener('click', e => {
+  //console.log('event in UL');
+  //console.log(e);
+  if(e.target.tagName === 'LI'){
+    e.target.remove();
+  }
+}) */
+
+/* const copy = document.querySelector('.copy-me');
+
+copy.addEventListener('copy', () => {
+  console.log('OI! My content is copyright');
+});
+
+const box = document.querySelector('.box');
+
+box.addEventListener('mousemove', e => {
+  //console.log(e);
+  //console.log(e.offsetX, e.offsetY);
+  box.textContent = `x pos - ${e.offsetX}  y pos - ${e.offsetY}`;
+});
+
+document.addEventListener('wheel', e => {
+  console.log(e.pageX, e.pageY);
+}); */
+
